@@ -6,17 +6,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var AppComponent = (function () {
-    function AppComponent() {
+var GuestListComponent = (function () {
+    function GuestListComponent() {
+        this.items = [
+            { name: 'Feed the cat', quantity: 2 },
+            { name: 'Do the shopping', quantity: 3 }
+        ];
     }
-    AppComponent = __decorate([
+    GuestListComponent = __decorate([
         core_1.Component({
-            selector: 'wedding-app',
-            templateUrl: 'controllers/app.component.html',
-            directives: [router_1.ROUTER_DIRECTIVES]
+            selector: 'guest-list',
+            templateUrl: 'controllers/guest/guest-list.component.html',
+            styleUrls: ['controllers/guest/guest-list.component.css']
         })
-    ], AppComponent);
-    return AppComponent;
+    ], GuestListComponent);
+    return GuestListComponent;
 }());
-exports.AppComponent = AppComponent;
+exports.GuestListComponent = GuestListComponent;

@@ -1,11 +1,16 @@
-<html>
+<!doctype html>
+<html lang="en" ng-app>
   <head>
-    <title>Angular 2 QuickStart</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <title>Lista de Invitados</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <!-- 1. Load libraries -->
-     <!-- Polyfill(s) for older browsers -->
+    <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
@@ -16,8 +21,10 @@
       System.import('app').catch(function(err){ console.error(err); });
     </script>
   </head>
-  <!-- 3. Display the application -->
   <body>
-    <my-app>Loading...</my-app>
+    <wedding-app>Loading...</wedding-app>
+    
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -6,17 +6,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var AppComponent = (function () {
-    function AppComponent() {
+var Observable_1 = require('rxjs/Observable');
+var GuestService = (function () {
+    function GuestService() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'wedding-app',
-            templateUrl: 'controllers/app.component.html',
-            directives: [router_1.ROUTER_DIRECTIVES]
-        })
-    ], AppComponent);
-    return AppComponent;
+    GuestService.prototype.getGuests = function () {
+        Observable_1.Observable.from([
+            { name: 'Feed the cat', quantity: quantity },
+            { name: 'Do the shopping', quantity: quantity }
+        ]);
+    };
+    GuestService = __decorate([
+        core_1.Injectable()
+    ], GuestService);
+    return GuestService;
 }());
-exports.AppComponent = AppComponent;
+exports.GuestService = GuestService;

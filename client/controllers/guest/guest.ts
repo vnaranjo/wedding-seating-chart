@@ -1,4 +1,6 @@
 export class Guest {
-  name: String;
-  quantity: number;
+  
+  constructor(public name: String, public quantity: number){
+    
+  }
 }

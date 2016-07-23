@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
-import { GuestService } from 'controllers/guest/guest.service';
+import { GuestService } from './guest/guest.service';
 
 
 @Component({

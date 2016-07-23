@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { GuestService } from 'controllers/guest/guest.service';
-import { Guest } from 'controllers/guest/guest';
+import { GuestService } from './guest.service';
+import { Guest } from './guest';
 import { OnInit } from '@angular/core';
 
 @Component({
@@ -11,6 +11,7 @@ import { OnInit } from '@angular/core';
 export class GuestListComponent implements OnInit {
   
   items: Guest[];
+  errorMessage: string;
   
   constructor(private guestService : GuestService){
   }

@@ -5,13 +5,11 @@ import { GuestListComponent } from './guest/guest-list.component';
 const routes: RouterConfig = [
   {
     path: 'home',
-    component: HomeComponent,
-    useAsDefault: true
+    component: HomeComponent
   },
   {
     path: 'guest',
-    component: GuestListComponent,
-    useAsDefault: true
+    component: GuestListComponent
   },
   {
       path: '', 
